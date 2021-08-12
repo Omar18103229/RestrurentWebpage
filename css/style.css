@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:inherit;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gentium Basic', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Yeseva One', cursive;
+}
+
+
+header{
+    background-image: url(../image/bgc-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: auto;
+}
+
+.header-part{
+    padding: 10px 0;
+}
+.menu{
+    margin-top: 40px;
+}
+.menu ul{
+    float: right;
+
+}
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    color: #f6f5f0;
+    transform: scale(1);
+    transition:all linear 0.5s;
+
+}
+
+.menu ul li a::after{
+    content: "";
+    top: -35px;
+    left: 15px;
+    background: rgb(248, 246, 246);
+    position: absolute;
+    height: 3px;
+    width: 0;
+    display: none;
+    transform: scale(0);
+    transition: 0.5s;
+    display: block;
+    box-shadow: 15px 15px 15px #02f8f8;
+}
+
+.menu ul li:hover >::after{
+    display: block;
+    width: 80%;
+    transform: scale(1);
+    transition: 0.5s;
+    
+}
+
+.menu ul li:hover{
+    transform: scale(1.1);
+    transition:all linear 0.5s;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.431);
+}
+
+
+.icon{
+    margin-top: 40px;
+}
+.icon a i{
+    padding: 0 10px;
+    color: #dab33e;
+    transform: scale(1);
+    transition:all linear 0.5s;
+}
+.icon a i:hover{
+    transform: scale(1.2);
+    transition:all linear 0.5s;
+}
+
+
+.slider{
+    margin: 30px 0;
+}
+
+.slider-con{
+    text-align: center;
+}
+
+.slider-con h1{
+    font-size: 90px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #f6f5f0;
+}
+.slider-con img{
+    margin: 35px 0;
+}
+.slider-con a{
+    margin-top: 50px;
+    border: 1px solid #fff;
+    padding: 15px 50px;
+    color: #fff;
+    background: rgba(228, 225, 225, 0.15);
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(7, 0, 0, 0.274);
+    transform: scale(0);
+    transition: all linear 0.6s;
+}
+
+.slider-con a:hover{
+    background: rgba(0, 0, 0, 0.835);
+    border-color: rgba(0, 0, 0, 0.698);
+    color: #fff;
+    transform: scale(1);
+    transition: all linear 0.6s;
+}
+/* food part css start */
+#food{
+    background-image: url(../image/food-bgc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+}
+
+.food-1{
+    text-align: center;
+}
+.food-1 h1{
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+
+.food-1 p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #585858;
+    margin-bottom: 35px;
+}
+.food-1 img{
+    margin-bottom: 20px;
+
+}
+/* food part css end */
+
+/* incredients part css start */
+#incredient{
+    background-image: url(../image/inredeients-bgc.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.incre-con{
+    height: 560px;
+    width: 560px;
+    background: #0000007a;
+    text-align: center;
+    padding: 80px 65px;
+}
+
+.incre-con h1{
+    font-size: 36px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #fff;
+}
+.incre-con img{
+    margin: 15px 0;
+}
+.incre-con p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+} 
+
+.incre-img img{
+    margin:0 15px;
+    transform: translate(0);
+    transition: 0.5s;
+}
+
+
+.incre-img img:hover{
+    transform: translate(-30px, -50px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* incredients part css end */
+
+
+/* menu part css start */
+#menu{
+    background-image: url(../image/menu-bgc.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu_main{
+    text-align: center;
+}
+.menu-list{
+    margin: 100px 0;
+}
+.menu-list h1{
+    font-size: 36px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #cc9900;
+    margin-bottom: 10px;
+    
+}
+
+.menu_main img{
+    margin-bottom: 25px;
+}
+.menu-item-name h1{
+    font-size: 21px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #cc9900;
+}
+
+.menu-price h1{
+    font-size: 21px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #cc9900;
+    text-align: right;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background: #cc9900;
+}
+.divider p{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #1d1c1c;
+    padding: 10px ;
+}
+
+.menu-2{
+    margin: 50px 0;
+}
+
+.divider p{
+        position: relative;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #1d1c1c;
+        padding: 10px 0;
+}
+.special p::after{
+    content: "Special";
+    position: absolute;
+    top: 30px;
+    left: 290px;
+    color: rgb(253, 253, 253);
+    padding-left: 10px;
+    padding-top:-0px;
+    background: #d5b763;
+    height: 23px;
+    width: 70px;
+    border-radius: 3px;
+}
+
+.mk{
+    border-top: 1px solid #d5b763;;
+}
+
+/* menu part css end */
+
+
+/* Guest Review Part css start */
+#Reviews{
+    background-image: url(../image/reviews_bgc.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.guest_reviews{
+    padding: 100px 0;
+}
+
+.reviews_div{
+    padding: 70px;
+    height: 560px;
+    width: 770px;
+    background: rgba(0, 0, 0, 0.726);
+    text-align: center;
+}
+
+.reviews_div h1{
+    font-size: 36px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #ffffff;
+}
+.reviews_div img{
+    margin: 15px 0;
+}
+.reviews_div p{
+    font-size: 25px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.reviews_div b{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 35%;
+}
+/* Guest Review Part css end */
+
+
+/* Reservation part css start */
+#Reservation{
+    background-image: url(../image/book-bgc.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reserv_img{
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.reserv_con_form h1{
+    font-size: 36px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #d5b763;
+}
+.reserv_con_form p{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #4c4c4c;
+    text-align: justify;
+}
+.reserv_con_form img{
+    margin-bottom: 15px;
+}
+
+form{
+    margin-top: -50px;
+}
+
+/* .part-1{
+    margin-right: 10px;
+    margin-bottom: 10px;
+} */
+
+.part-1 label{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #c9a131;
+}
+
+.divbr{
+    margin-bottom: 10px;
+}
+
+.part-1 .phol{
+    background:transparent;
+    outline-color: #c9a131;
+    padding: 5px;
+    width: 170px;
+    font-size: 10px;
+    color: #999999;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.btn_submit{
+    padding: 5px 20px;
+    background: #c9a131;
+    color: #fff;
+    border-color: #c9a131;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+/* Reservation part css end */
+
+/* footer part css start */
+footer{
+    background: #000;
+    padding: 60px 0;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer h1{
+    font-size: 21px;
+    font-family: 'Yeseva One', 'cursive';
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer img{
+    width: 70%;
+    margin: 10px 0;
+}
+
+.footer p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.footer .scheule{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.socio{
+    width: 90px;
+    height: auto;
+}
+/* footer part css end */
